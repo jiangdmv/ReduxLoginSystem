@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaSignInAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ function Login() {
         </h1>
         <p>Login and start</p>
       </section>
-      <section className="form">
+      <div className="form">
         <form onSubmit={onSubmit}>
           <div className="form-group">
             <input
@@ -51,14 +52,27 @@ function Login() {
               onChange={onChange}
             ></input>
           </div>
-
           <div className="form-group">
             <button type="submit" className="btn btn-block">
               Submit
             </button>
           </div>
         </form>
-      </section>
+      </div>
+
+      <div>
+        Don't have an account?&nbsp;
+        <Link to="/register" className="link">
+          Register
+        </Link>
+        &nbsp;here.
+      </div>
+      <br></br>
+      <div>
+        <Link to="/resetpassword" className="link">
+          Forget your password?
+        </Link>
+      </div>
     </div>
   );
 }

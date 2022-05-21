@@ -108,6 +108,10 @@ h3 {
   background: none;
 }
 
+.link {
+  color: blue;
+}
+
 .form,
 .content {
   width: 90%;
