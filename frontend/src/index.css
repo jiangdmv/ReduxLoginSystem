@@ -110,8 +110,19 @@ h3 {
 
 .form,
 .content {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.showBox {
+  width: 52%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  border-radius: 17px;
 }
 
 .form-group {
@@ -201,6 +212,10 @@ h3 {
 }
 
 @media (max-width: 600px) {
+  .showBox {
+    width: 92%;
+  }
+
   .form {
     width: 90%;
   }

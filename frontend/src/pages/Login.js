@@ -7,7 +7,7 @@ function Login() {
     password: "",
   });
 
-  const { name, email, password, password2 } = formData;
+  const { email, password } = formData;
 
   const onChange = () => {};
 
@@ -20,14 +20,13 @@ function Login() {
   };
 
   return (
-    <>
+    <div className="showBox">
       <section className="heading">
         <h1>
           <FaSignInAlt /> Login
         </h1>
         <p>Login and start</p>
       </section>
-
       <section className="form">
         <form onSubmit={onSubmit}>
           <div className="form-group">
@@ -60,7 +59,7 @@ function Login() {
           </div>
         </form>
       </section>
-    </>
+    </div>
   );
 }
 

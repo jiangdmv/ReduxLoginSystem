@@ -22,7 +22,7 @@ function Register() {
   };
 
   return (
-    <>
+    <div className="showBox">
       <section className="heading">
         <h1>
           <FaUser /> Register
@@ -83,7 +83,7 @@ function Register() {
           </div>
         </form>
       </section>
-    </>
+    </div>
   );
 }
 
