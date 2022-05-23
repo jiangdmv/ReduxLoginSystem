@@ -10,14 +10,15 @@ function Login() {
 
   const { email, password } = formData;
 
-  const onChange = () => {};
-
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
   };
 
   return (
